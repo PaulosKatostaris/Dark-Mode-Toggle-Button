@@ -32,7 +32,6 @@ body{
     cursor: pointer;
 
     position: relative;
-
 }
 .sun div{
     height: 3px;
@@ -42,27 +41,28 @@ body{
     top: 50%;
     left: 50%;  
     z-index: -1;
+
     transition: width 0.5s;
 }
 
 .sun .line1{
     width: 160px;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
 }
 .sun .line2{
     width: 160px;
-    transform: translate(-50%, 50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
 }
 .sun .line3{
     width: 140px;
-    transform: translate(-50%, 50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 .sun .line4{
     width: 140px;
-    transform: translate(-50%, 50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 .sun::after{
-    content: ' ';
+    content: '';
     width: 100px;
     height: 100px;
     background: #e91e63;
